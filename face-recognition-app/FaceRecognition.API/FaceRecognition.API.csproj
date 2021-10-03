@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FaceRecognition.BL\FaceRecognition.BL.csproj" />
+    <ProjectReference Include="..\FaceRecognition.DB\FaceRecognition.DB.csproj" />
+    <ProjectReference Include="..\FaceRecognition.Models\FaceRecognition.Models.csproj" />
+    <ProjectReference Include="..\FaceRecognition.DTOs\FaceRecognition.DTOs.csproj" />
+  </ItemGroup>
+
+</Project>
